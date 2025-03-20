@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demid Airlines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Demid Airlines</h1>
+    <img src="airplane.jpg" alt="Самолёт Demid Airlines">
+  </header>
+
+  <main>
+    <h2>Выберите рейс</h2>
+    <form id="flight-form">
+      <label for="departure">Откуда:</label>
+      <input type="text" id="departure" placeholder="Город отправления" required>
+
+      <label for="destination">Куда:</label>
+      <input type="text" id="destination" placeholder="Город назначения" required>
+
+      <label for="date">Дата рейса:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Найти рейс</button>
+    </form>
+
+    <div id="flight-details" style="display:none;">
+      <h3>Информация о рейсе</h3>
+      <p>Цена билета: 30 000 рублей</p>
+      <button id="pay-button">Оплатить</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Demid Airlines</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
